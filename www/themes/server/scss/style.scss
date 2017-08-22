@@ -1,0 +1,232 @@
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap';
+@import '../bootstrap/assets/font-awesome/scss/font-awesome.scss';
+@import 'overrides';
+
+//## Main Layout CSS Builder
+
+@import 'global/plugins.scss'; // global metronic framework variables
+@import 'global/components.scss'; // global metronic framework mixings
+
+@import '_variables'; // theme level variables
+
+@mixin reset-container() {    
+  	> .container { 
+    	width: 100%;
+    	max-width: none !important;  
+    	margin: 0 !important;  
+	}
+} 
+
+@import 'layout/_print'; // print layout  
+
+@import 'themes/default.scss';
+@import 'layout/_header'; // page header
+@import 'layout/_quick-sidebar'; // page quick sidebar
+@import 'layout/_content'; // page consnde          
+@import 'layout/_footer';   // page footer               
+ 
+@import 'layout/_theme-panel';  // theme customizer panel         
+
+.container-fluid {
+	padding: 0px;
+}
+
+/***  
+Page Loading      
+***/   
+
+.page-on-load {
+	background: #fefefe;
+
+	.page-header,
+	.page-container,  
+	.page-prefooter,
+	.page-footer,
+	> .clearfix {
+		display: none;
+		transition: all 2s;
+	}
+}
+
+body {
+	header.navbar {
+		margin: 0;
+	}
+	h2.block-title {
+		margin: 0;
+	}
+
+	h1.page-header,
+	h2.block-title {
+		font-size: 25px;
+		height: 60px;
+		color: #337ab7;
+	}
+}
+
+
+body.user-logged-in {
+	h1 {
+		font-size: 25px;
+	}
+	h1.page-header {
+		height: 60px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	.nav > li > a {
+		/*padding: 5px 10px;*/
+	}
+
+	input.form-file {
+		height: 100%;
+	}
+	aside {
+		padding: 20px 15px;
+		margin-top: 20px;
+		
+		section {
+			color: #fff;
+
+			h2.block-title {
+				margin-top: 0;
+				color: #fff;
+				font-size: 25px;
+			}
+			div.view-print-block {
+				div.views-field-field-doc-pages {
+					color: #fff;
+				}
+
+				.item {
+					display: block;
+					
+					.file-type {
+						display: inline-block;
+						width: 100%;
+						margin-right: 10px;
+
+						span {
+							font-size: 12
+						}
+					}	
+					.file-print {
+						display: inline-block;
+						vertical-align: top;
+						padding: 7px 0;
+					}
+				}
+			}
+		}
+	}
+
+	#block-yourcredits {
+		margin-bottom: 30px;
+
+		div.user-credit {
+			div.credit-text {
+				display: inline-block;
+				font-size: 18px;
+				margin-right: 15px;
+
+				.glyphicon-info-sign {
+					color: red;
+				}
+			}
+
+			div.user-topup {
+				display: inline-block;
+
+				a.btn {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	div.popup_box {
+		display: block;
+		position: fixed;
+		height: 400px;
+		width: 300px;
+		background: #fff;
+		left: 50%;
+		top: 40%;
+		margin-left: -150px;
+		margin-top: -150px;
+		padding: 15px;
+		font-size: 15px;
+		-moz-box-shadow: 0 0 5px;
+		-webkit-box-shadow: 0 0 5px;
+		box-shadow: 0 0 5px;
+		z-index: 9999;
+		text-align: left;
+		overflow: hidden;
+		font-size: 40px;
+
+		span.glyphicon-alert{
+			color: red;
+		}
+	}
+
+	div.popup_fixed_bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		opacity: 0.5;
+		z-index: 1100;
+	}
+
+	div.main-container {
+
+		div.row {
+			section.col-sm-12 {
+
+				section#block-yourcredits,
+				form#print-form,
+				section#block-views-block-print-block-block-1,
+				section#block-views-block-top-up-transaction-block-1,
+				section#block-views-block-print-transaction-block-1 {
+					/*min-height: 20px;
+					padding: 19px;
+					margin-bottom: 20px;
+					background-color: #f5f5f5;
+					border: 1px solid #e3e3e3;
+					border-radius: 4px;
+					-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+					box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);*/
+
+					h2.block-title {
+						margin-top: 0px;
+					}
+
+					div.views-field-field-doc-pages {
+						color: red;
+					}
+				}
+
+				section#block-views-block-print-block-block-1 {
+					
+					div.views-row {
+						padding-bottom: 25px;
+
+						div.views-field-field-documents {
+							div.file-print {
+								margin-top: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+body.navbar-is-fixed-top {
+	margin-top: 65px !important;
+}

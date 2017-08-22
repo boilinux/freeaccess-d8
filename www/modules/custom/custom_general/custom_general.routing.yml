@@ -1,0 +1,52 @@
+custom_general.create_data:
+  path: '/api/data/create'
+  defaults:
+    _controller: '\Drupal\custom_general\Controller\api::data_create'
+    _title: 'Create Data'
+  requirements:
+    _custom_access: '\Drupal\custom_general\Controller\api::authorize_token'
+
+custom_general.create_credit:
+  path: '/api/data/create_credit'
+  defaults:
+    _controller: '\Drupal\custom_general\Controller\api::data_create_credit'
+    _title: 'Create Credit'
+  requirements:
+    _custom_access: '\Drupal\custom_general\Controller\api::authorize_token'
+
+custom_general.test_page:
+  path: '/api/data/test_page'
+  defaults:
+    _controller: '\Drupal\custom_general\Controller\api::test_page'
+  requirements:
+    _custom_access: '\Drupal\custom_general\Controller\api::authorize_token'
+
+custom_general.print_form:
+  path: '/user/my-prints'
+  defaults:
+    _title: 'Print Me'
+    _form: '\Drupal\custom_general\Form\printForm'
+  requirements:
+    _custom_access: '\Drupal\custom_general\Form\printForm::check_user_auth'
+
+custom_general.print_history:
+  path: '/user/history'
+  defaults:
+    _title: 'Transaction History'
+    _controller: '\Drupal\custom_general\Controller\api::transaction_history'
+  requirements:
+    _custom_access: '\Drupal\custom_general\Form\printForm::check_user_auth'
+
+custom_general.user_print:
+  path: '/api/data/print'
+  defaults:
+    _controller: '\Drupal\custom_general\Controller\api::print_me'
+  requirements:
+    _custom_access: '\Drupal\custom_general\Form\printForm::check_user_auth'
+
+custom_general.user_insert_credit:
+  path: '/api/data/insert/credit'
+  defaults:
+    _controller: '\Drupal\custom_general\Controller\api::user_insert_credit'
+  requirements:
+    _custom_access: '\Drupal\custom_general\Form\printForm::check_user_auth'
