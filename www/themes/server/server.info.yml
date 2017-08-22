@@ -22,5 +22,3 @@ regions:
 libraries:
   - 'server/global-styling'
   - 'server/bootstrap-scripts'
-  - 'server/metronic-scripts'
-  - 'server/custom-script'

@@ -1,9 +1,6 @@
 global-styling:
   css:
     theme:
-      css/login.css: {}
-      bootstrap/assets/font-awesome/simple-line-icons/simple-line-icons.min.css: {}
-      plugins/bootstrap-toastr/toastr.min.css: {}
       css/style.css: {}
 
 bootstrap-scripts:
@@ -20,26 +17,3 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
-
-  dependencies:
-    - core/jquery.ui.datepicker
-
-metronic-scripts:  
-  js:
-    plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js: {}
-    plugins/jquery-slimscroll/jquery.slimscroll.min.js: {}
-    plugins/jquery.blockui.min.js: {}
-    plugins/jquery.cokie.min.js: {}
-    plugins/uniform/jquery.uniform.min.js: {}
-    plugins/bootstrap-toastr/toastr.min.js: {}
-    plugins/jquery.sparkline.min.js: {}
-    scripts/metronic.js: {}
-    scripts/layout.js: {}
-    scripts/ui-toastr.js: {}
-    scripts/quick-sidebar.js: {}
-    scripts/demo.js: {}
-    scripts/tasks.js: {}
-
-custom-script:
-  js:
-    js/custom.js: {}
