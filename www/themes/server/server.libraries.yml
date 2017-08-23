@@ -1,7 +1,48 @@
+metronic-styling:
+  css:
+    theme:
+      assets/global/plugins/font-awesome/css/font-awesome.min.css: {}
+      assets/global/plugins/simple-line-icons/simple-line-icons.min.css: {}
+      assets/global/plugins/bootstrap/css/bootstrap.min.css: {}
+      assets/global/plugins/uniform/css/uniform.default.css: {}
+
+      stylesheets/global/components.css: {}
+      stylesheets/global/plugins.css: {}
+      stylesheets/admin/pages/todo.css: {}
+      stylesheets/admin/pages/timeline.css: {}
+      stylesheets/admin/pages/tasks.css: {}
+      stylesheets/admin/pages/search.css: {}
+      stylesheets/admin/pages/profile.css: {}
+      stylesheets/admin/pages/pricing-tables.css: {}
+      stylesheets/admin/pages/portfolio.css: {}
+      stylesheets/admin/pages/news.css: {}
+      stylesheets/admin/pages/login.css: {}
+      stylesheets/admin/pages/lock.css: {}
+      stylesheets/admin/pages/invoice.css: {}
+      stylesheets/admin/pages/inbox.css: {}
+      stylesheets/admin/pages/image-crop.css: {}
+      stylesheets/admin/pages/error.css: {}
+      stylesheets/admin/pages/coming-soon.css: {}
+      stylesheets/admin/pages/blog.css: {}
+      stylesheets/admin/pages/about-us.css: {}
+
 global-styling:
   css:
     theme:
       css/style.css: {}
+
+metronic-scripts:
+  js:
+    assets/global/plugins/jquery.min.js: {}
+    assets/global/plugins/jquery-migrate.min.js: {}
+    assets/global/plugins/bootstrap/js/bootstrap.min.js: {}
+    assets/global/plugins/jquery.blockui.min.js: {}
+    assets/global/plugins/uniform/jquery.uniform.min.js: {}
+    assets/global/plugins/jquery.cokie.min.js: {}
+    assets/global/plugins/jquery-validation/js/jquery.validate.min.js: {}
+    assets/global/scripts/metronic.js: {}
+    assets/admin/layout/scripts/layout.js: {}
+    assets/admin/pages/scripts/login.js: {}
 
 bootstrap-scripts:
   js:

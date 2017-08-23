@@ -20,5 +20,7 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'server/global-styling'
-  - 'server/bootstrap-scripts'
+  - 'server/metronic-styling'
+  # - 'server/global-styling'
+  - 'server/metronic-scripts'
+  # - 'server/bootstrap-scripts'
